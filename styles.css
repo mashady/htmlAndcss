@@ -502,16 +502,16 @@ textarea {
   height: 600px;
 }
 #slides .slide_1 {
-  background-image: url("../assets/indiaGate.jpg");
+  background-image: url("./assets/indiaGate.jpg");
 }
 #slides .slide_2 {
-  background-image: url("../assets/argaFort.jpg");
+  background-image: url("./assets/argaFort.jpg");
 }
 #slides .slide_3 {
-  background-image: url("../assets/redFort.jpg");
+  background-image: url("./assets/redFort.jpg");
 }
 #slides .slide_4 {
-  background-image: url("../assets/hum.jpg");
+  background-image: url("./assets/hum.jpg");
   background-color: red;
 }
 .slide-content {
