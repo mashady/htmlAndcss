@@ -1,0 +1,427 @@
+<!--
+    1- home - dn
+    2- hobbies
+    3- feedback page => animation first - with form and thank u message
+    4- contact page => email and number and social media
+    5- community slider 
+    6- cv - personal information
+    7- skills
+
+    **** 
+    - fix container issues and handle responsive
+    - change the scrollbar
+    - animation support
+    - responsive
+    - enhance code and modularity and variables
+    - donot forget the footer 
+    - images effects
+    **tommorow inshallah
+    start with slider and cv and discover page
+
+    footer and scrollbar
+
+    animation
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mashady Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <input type="radio" name="pages" id="home" checked />
+    <input type="radio" name="pages" id="skills" />
+    <input type="radio" name="pages" id="community" />
+    <input type="radio" name="pages" id="contact" />
+    <input type="radio" name="pages" id="feedback" />
+    <input type="radio" name="pages" id="hobbies" />
+    <input type="radio" name="pages" id="personal" />
+    <input type="radio" name="pages" id="hopes" />
+
+    <!-- header section -->
+    <header>
+      <h1 class="poppins-medium">
+        Welcome to <span style="color: #6b69f2">mashady</span> space.
+      </h1>
+    </header>
+
+    <!-- nav section -->
+    <nav>
+      <span class="logo poppins-semibold">mashady</span>
+      <a id="top"></a>
+      
+      <div class="menu-container">
+        <span class="menu poppins-medium">menu</span>
+        <i class="fa-solid fa-bars"></i>
+        <ul class="dropdown">
+          <div class="drop-content">
+            <li><label for="home" class="poppins-medium">Home</label></li>
+            <li><label for="skills" class="poppins-medium">skills</label></li>
+            <li>
+              <label for="community" class="poppins-medium">community</label>
+            </li>
+            <li><label for="contact" class="poppins-medium">contact</label></li>
+            <li><label for="hobbies" class="poppins-medium">hobbies</label></li>
+            <li>
+              <label for="feedback" class="poppins-medium">feedback</label>
+            </li>
+            <li>
+              <label for="personal" class="poppins-medium">personal</label>
+            </li>
+            <li>
+                <label for="hopes" class="poppins-medium">hopes and wishes</label>
+              </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- home section -->
+    <section class="home">
+      <div class="home-content" style="width: 80%">
+        <h2 class="poppins-semibold">Software engineer</h2>
+        <p class="poppins-regular">
+          Mashady Space is a virtual reality experience designed to help you
+          explore the cosmos in a unique and immersive way.
+        </p>
+        <button class="explore-more poppins-medium">Explore more</button>
+      </div>
+      <div>
+        <img src="../assets/me.jpeg" alt="homeImage" />
+      </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="skills">
+      <div class="skill-content">
+        <h2 class="poppins-semibold">Hey, its abusamir</h2>
+        <p class="poppins-regular">
+          Software Developer based in Egypt, specializing in Full web app
+          building in both ui and server side, also buliding mobile application.
+        </p>
+        <h3 class="poppins-semibold">Skills & Technologies</h3>
+        <div>
+          <img src="../assets/html.svg" alt="html" class="skillImage" />
+          <img src="../assets/css.svg" alt="html" class="skillImage" />
+          <img src="../assets/javascript.svg" alt="html" class="skillImage" />
+          <img
+            src="../assets/bootstrap-svgrepo-com.svg"
+            alt="html"
+            class="skillImage"
+          />
+          <img src="../assets/sass.svg" alt="html" class="skillImage" />
+          <img src="../assets/typescript.svg" alt="html" class="skillImage" />
+
+          <img src="../assets/react.svg" alt="html" class="skillImage" />
+          <img src="../assets/nextjs.svg" alt="html" class="skillImage" />
+          <img
+            src="../assets/Angular_full_color_logo.svg"
+            alt="html"
+            class="skillImage"
+          />
+
+          <img src="../assets/redux.svg" alt="html" class="skillImage" />
+          <img src="../assets/tailwindcss.svg" alt="html" class="skillImage" />
+          <img src="../assets/nodejs.svg" alt="html" class="skillImage" />
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- hobies section -->
+    <section class="hobbies">
+      <div class="hobbies-container">
+        <div>
+          <h2>Discover new places</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+            possimus dolore. Earum mollitia nulla, iure, est minus voluptates
+            odio fuga perferendis repellendus vitae possimus distinctio laborum
+            recusandae dicta corporis voluptas?
+          </p>
+        </div>
+        <div class="imageSide">
+            <div class="imgContainer">
+                <img
+            src="../assets/movies.jpg"
+          />
+            </div>
+          
+        </div>
+      </div>
+      <div class="hobbies-container">
+        <div class="imageSide">
+            <div class="imgContainer">
+                <img
+            src="../assets/oldPlaces.jpg"
+          />
+            </div>
+          
+        </div>
+        <div>
+          <h2>Discover new places</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+            possimus dolore. Earum mollitia nulla, iure, est minus voluptates
+            odio fuga perferendis repellendus vitae possimus distinctio laborum
+            recusandae dicta corporis voluptas?
+          </p>
+        </div>
+      </div>
+      <div class="hobbies-container">
+        <div>
+          <h2>Discover new places</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+            possimus dolore. Earum mollitia nulla, iure, est minus voluptates
+            odio fuga perferendis repellendus vitae possimus distinctio laborum
+            recusandae dicta corporis voluptas?
+          </p>
+        </div>
+        <div class="imageSide">
+            <div class="imgContainer">
+                <img
+                src="../assets/oldPlaces2.jpg"
+              />
+            </div>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+
+    
+    <div class="welcomeFeedback">
+        <h1>give me your feedback</h1>
+        <img src="../assets/feedback.png" class="feedbackLoading"/>
+    </div>
+    <input type="radio" name="feedback" id="feedbackChk" />
+
+    <section class="feedback" id="feedbackSection">
+      <div class="feedback-content">
+        <h2 class="poppins-semibold">Be in touch with us</h2>
+          <input
+            type="text"
+            placeholder="Enter your full name"
+            class="poppins-regular"
+          />
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="poppins-regular"
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Leave your message"
+            class="poppins-regular"
+          ></textarea>
+          <button type="submit" class="feedbackBtn"><label for="feedbackChk">Send message</label></button>
+      </div>
+      
+      <div>
+        <img src="../assets/contact.jpg" alt="feedback" class="feedbackImage" />
+      </div>
+      
+    </section>
+
+    <div class="feedbackThanks">
+        <h1>Thank you for your feedback</h1>
+        <div>
+            <img src="../assets/success.gif" class="feedbackLoading"/>
+
+        </div>
+    </div>
+    <!-- feedback section -->
+    <section class="contact">
+      <div class="contact-container">
+        <h1 class="poppins-semibold">Hello, lets connect</h1>
+        <br />
+        <div style="display: flex; justify-content: space-between">
+          <span>For more inquires:</span>
+          <span>muhammedmashady@gmail.com</span>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <span>Messages via whatsapp:</span>
+          <span>+201551262315</span>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <span>Take a tour into my social media:</span>
+          <div>
+            <a
+              href="https://www.facebook.com/99MuhammedMashady/"
+              target="_blank"
+            >
+              <img src="../assets/fb.png" style="width: 60px" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/muhammedmashady/"
+              target="_blank"
+            >
+              <img src="../assets/linkedin.png" style="width: 60px" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- community section -->
+    <section class="community">
+      <div class="community-container" style="text-align: center">
+        <h1 class="poppins-medium">Intake 45 💜</h1>
+        <p class="poppins-medium">
+          Sometimes it's the journey that teaches you a lot about your
+          destination, and along the way, there are people who are not only
+          helpful but also instrumental in shaping the path we take, offering
+          guidance, support, and wisdom when we need it most.
+        </p>
+        <div class="img-container"><img
+            src="../assets/team1.jpeg"
+            alt="community"
+            style="border-radius: 10px; "
+          /></div>
+        
+      </div>
+    </section>
+
+    <!-- personal section -->
+    <section class="personal">
+      <div class="personal-container">
+        <div>
+          <img
+            src="../assets/me4.jpeg"
+            alt="homeImage"
+            style="width: 500px; border-radius: 10px"
+          />
+        </div>
+        <div>
+          <h1 class="poppins-semibold">Personal information:</h1>
+          <ul class="info-list">
+            <li>Name: Muhammed Samir Mashady Ahmed</li>
+            <li>
+              Track: Student at Information Technology Institute ( ITI ) 9
+              months program at open source application development
+            </li>
+            <li>Location: Minia, maghagha el oboor</li>
+            <li>Age: 26 years old</li>
+            <li>
+              Skills: HTML, CSS, Javascript, bootstrap, tailwindcss, sass,
+              reactJs, nextJs and angular.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- hopes and wishes -->
+     <section class="hopes">
+        <div class="hopes-container">
+          <h1 class="poppins-semibold">Place i hope to visit:</h1>
+          <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked />
+            <input type="radio" name="slider" id="slide2" />
+            <input type="radio" name="slider" id="slide3" />
+            <input type="radio" name="slider" id="slide4" />
+            <div id="slides">
+              <div id="overflow">
+                <div class="overlay"></div>
+      
+                <div class="inner">
+                  <div class="slide slide_1">
+      
+                    <div class="slide-content">
+                        India Gate, Delhi
+                    </div>
+                  </div>
+                  <div class="slide slide_2">
+                    <div class="slide-content">
+                        Agra Fort, Agra
+                    </div>
+                  </div>
+                  <div class="slide slide_3">
+                    <div class="slide-content">
+                        Red Fort, Delhi
+                    </div>
+                  </div>
+                  <div class="slide slide_4">
+                    <div class="slide-content">
+                        Humayun’s Tomb, Delhi
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--
+            
+            <div id="controls">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+            </div>
+            -->
+            <div id="bullets">
+              <label for="slide1">1</label>
+              <label for="slide2">2</label>
+              <label for="slide3">3</label>
+              <label for="slide4">4</label>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-heading poppins-medium">lets get this party started</div>
+            <div class="footer-mail poppins-medium">muhammedmashady@gmail.com</div>
+            <div class="footer-social">
+                <div>
+                    <a
+                      href="https://www.facebook.com/99MuhammedMashady/"
+                      target="_blank"
+                    >
+                      <img src="../assets/fb.png" style="width: 40px" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/muhammedmashady/"
+                      target="_blank"
+                    >
+                      <img src="../assets/linkedin.png" style="width: 40px" />
+                    </a>
+                  </div>
+            </div>
+            <p class="poppins-regular">&copy; <span class="poppins-medium">Samir Mashady</span>  2025 Intake 45. All rights reserved.</p>
+            
+    </footer>
+
+    
+
+    
+  </body>
+</html>
